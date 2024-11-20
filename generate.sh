@@ -2,6 +2,13 @@
 
 set -e
 
+# ffmpegの存在確認
+if ! command -v ffmpeg &> /dev/null; then
+    echo "Error: ffmpeg is not installed. Please install it first." >&2
+    echo "Installation instructions: https://ffmpeg.org/download.html" >&2
+    exit 1
+fi
+
 # 初期値の設定
 OUTPUT_SCALE="1080:1920" # 出力ファイルのサイズ
 VIDEO_SCALE="1088:612" # 配置するビデオの変換後サイズ
