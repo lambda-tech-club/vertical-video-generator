@@ -2,6 +2,8 @@
 
 横動画から縦動画を生成するスクリプト
 
+https://github.com/user-attachments/assets/a45baaea-db6f-495e-b3db-3513930aa03f
+
 ## インストール
 
 ```bash
